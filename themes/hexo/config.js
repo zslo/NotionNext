@@ -10,7 +10,7 @@ const CONFIG = {
   SHOW_START_READING: false,
 
   // 菜单配置
-  MENU_INDEX: true, // 显示首页
+  MENU_INDEX: false, // 显示首页
   MENU_CATEGORY: false, // 显示分类
   MENU_TAG: false, // 显示标签
   MENU_ARCHIVE: false, // 显示归档

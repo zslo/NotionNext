@@ -13,11 +13,7 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
  
   // 3.14.1版本后，欢迎语在此配置，英文逗号隔开 ,  即可支持多个欢迎语打字效果。
-  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS ||'城市中的游牧者 出租屋里的穴居人
-    ,逃逸于创伤式现实的压抑异化,沉溺于自杀式存在的快感享乐,
-  在尼采之桥上瘫平,在边缘系统中摆烂,
-  在生命黑夜里,耗费着意识过剩的躁郁主体, 
-  死之前夕,梦呓狂语,皆是意识之排泄物,不足与他者道也',
+  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS ||'斜目而视',
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 

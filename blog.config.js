@@ -22,7 +22,7 @@ const BLOG = {
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://zslo.club', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
 
-  // 创建 iframe 元素
+// 创建 iframe 元素
 var iframe = document.createElement('iframe');
 iframe.frameBorder = 'no';
 iframe.border = '0';
@@ -32,7 +32,14 @@ iframe.width = '330';
 iframe.height = '86';
 iframe.src = '//music.163.com/outchain/player?type=2&id=18001009&auto=1&height=66';
 
-// 将 iframe 元素添加到页面中
+// Wait for the document to finish loading
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the target element to append the iframe to (e.g., the body)
+  var targetElement = document.body; // You can change this to the desired target element
+
+  // Append the iframe to the target element
+  targetElement.appendChild(iframe);
+});
 document.body.appendChild(iframe);
  
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''

@@ -22,25 +22,6 @@ const BLOG = {
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://zslo.club', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
 
-// 创建 iframe 元素
-var iframe = document.createElement('iframe');
-iframe.frameBorder = 'no';
-iframe.border = '0';
-iframe.marginWidth = '0';
-iframe.marginHeight = '0';
-iframe.width = '330';
-iframe.height = '86';
-iframe.src = '//music.163.com/outchain/player?type=2&id=18001009&auto=1&height=66';
-
-// Wait for the document to finish loading
-document.addEventListener('DOMContentLoaded', function() {
-  // Find the target element to append the iframe to (e.g., the body)
-  var targetElement = document.body; // You can change this to the desired target element
-
-  // Append the iframe to the target element
-  targetElement.appendChild(iframe);
-});
-document.body.appendChild(iframe);
  
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '942365121@qq.com', // 邮箱地址 例如mail@tangly1024.com
